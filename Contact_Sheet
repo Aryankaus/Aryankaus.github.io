@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #e7f1ff; /* Light blue background for the grid */
+            border-radius: 5px;
+            }
+        .contact-item {
+            background-color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            }
+        .contact-item h3 {
+            margin-top: 0;
+            }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            }
+  </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Information</h1>
+    </div>
+<div class="main-content">
+    <div class="contact-grid">
+        <!-- Contact 1 -->
+        <div class="contact-item">
+            <h3>Jane Doe</h3>
+            <p>Email: jane.doe@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </div>
+
+        <!-- Contact 2 -->
+        <div class="contact-item">
+            <h3>John Smith</h3>
+            <p>Email: john.smith@example.com</p>
+            <p>Phone: (555) 234-5678</p>
+        </div>
+
+        <!-- Contact 3 -->
+        <div class="contact-item">
+            <h3>Alex Johnson</h3>
+            <p>Email: alex.johnson@example.com</p>
+            <p>Phone: (555) 345-6789</p>
+        </div>
+
+        <!-- Add more contacts as needed -->
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Schulich School of Business, York University</p>
+</div>
+</body>
+</html>
+
