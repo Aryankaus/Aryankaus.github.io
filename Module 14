@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Intern Orientation Week</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>IBM Intern Orientation Week 2024</h1>
+    </div>
+    <div class="main-content">
+        <p class="opening-paragraph">
+            Join us for an exhilarating journey into the world of tech sales at the IBM Intern Orientation Week, tailored for our 2024 Sales Interns! This exclusive event, taking place from May 6th to May 10th, 2024, offers a unique opportunity for you to immerse yourself in IBM. As a new addition to our team, your presence at our downtown office, 16 York St, is essential for this comprehensive, week-long event, designed to equip you with the knowledge and skills necessary for a successful internship. Don't forget to complete your registration to secure your spot in what promises to be an unforgettable kickoff to your career in technology sales!
+        </p>
+        <h2>Subsequent Paragraphs:</h2>
+        <ol>
+            <li><strong>Detailed Agenda:</strong>
+                <ul>
+                    <li>Day-to-day outline.</li>
+                    <li>Description of workshops, training sessions, and networking opportunities.</li>
+                    <li>List of keynote speakers.</li>
+                </ul>
+            </li>
+            <li><strong>Registration Process and Deadline:</strong>
+                <ul>
+                    <li>Step-by-step guide on how to register.</li>
+                    <li>Deadline for registration and consequences of not registering.</li>
+                    <li>Contact information.</li>
+                </ul>
+            </li>
+            <li><strong>Preparation Guidelines for Interns:</strong>
+                <ul>
+                    <li>List of materials or documents to bring.</li>
+                    <li>Expectations regarding dress code and conduct.</li>
+                    <li>General tips and tricks.</li>
+                </ul>
+            </li>
+            <li><strong>Introduction to Teams:</strong>
+                <ul>
+                    <li>Information about the sales teams interns will be working with.</li>
+                    <li>Profiles of mentors and their role during the internship.</li>
+                    <li>Schedule of meet-and-greet sessions with sales teams and mentors.</li>
+                </ul>
+            </li>
+            <li><strong>Interactive Sessions and Team-Building Activities:</strong>
+                <ul>
+                    <li>Description of interactive sessions designed to boost sales skills.</li>
+                    <li>Overview of team-building activities planned for the week.</li>
+                    <li>Benefits of these sessions in fostering teamwork and communication skills.</li>
+                </ul>
+            </li>
+            <li><strong>Closing & Next Steps:</strong>
+                <ul>
+                    <li>Details about the closing ceremony.</li>
+                    <li>Information on post-orientation steps and the official start of the internship.</li>
+                    <li>Feedback forms.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 IBM Corporation</p>
+    </div>
+</body>
+</html>
