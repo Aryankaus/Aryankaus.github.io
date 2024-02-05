@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
+        .image-comparison {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 300px; /* Adjust this to fit your images */
+            height: auto;
+            display: block;
+        }
+
+        .description p {
+            margin: 0 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-comparison">
+    <div class="image-container">
+        <img src="3people.jpg" alt="3 People">
+    </div>
+    <div class="description">
+        <p>→ I removed a person</p>
+    </div>
+    <div class="image-container">
+        <img src="2people.jpg" alt="2 People">
+    </div>
+</div>
+
+</body>
+</html>
