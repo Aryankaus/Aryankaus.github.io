@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="section1">
+        <h2>AI Manipulated Image</h2>
+        <img src="ai_manipulated_image.jpg" alt="AI Manipulated Image">
+        <p>This photo is Elon Musk in what seems like attire from half a century ago, sitting on the dirt road in a run-down part of a small town, next to a cardboard box and small puppy. I am confident that this image is AI manipulated because the image has a colour filter, Elon Musk doesn’t have that body type and the complexion of his face is not matched with the rest of the photo. This description generated this image:</p>
+        <h2>Image from Personal Image</h2>
+        <img src="personal_image.jpg" alt="Image from Personal Image">
+    </section>
+    <section id="section2">
+        <h2>ChatGPT Image</h2>
+        <img src="chatgpt_image.jpg" alt="ChatGPT Image">
+        <p>This image above was generated from the following description of the original image: This photograph features a man sitting on a curb in an urban environment, flanked by a small dog to his right. He is dressed in a dark, formal coat, with his legs crossed and hands resting on his knee. His expression is contemplative, and he gazes directly at the camera. Behind him, there is a backdrop of worn brickwork and detritus, including a paper bag and a pile of assorted items. The image has a sepia-toned overlay, suggesting either an antique quality or a modern filter applied to give it a vintage appearance.</p>
+    </section>
+    <section id="section3">
+        <p>The image that was generated from my description correctly generated Elon Musk sitting on a dirt road with a cardboard box next to him, however, there is no dog and the setting doesn’t reflect a run-down town. It looks like a forest. The image that was generated from the AI description failed to generate Elon Musk, sitting on the floor, the dirt floor and the cardboard. It did generate the dog though. Overall my description did a better job of generating a more similar image.</p>
+    </section>
+</body>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+</style>
+
+</html>
 
