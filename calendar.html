@@ -69,14 +69,36 @@
             transition: background-color 0.3s;
         }
         .blue-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3; 
         }
+
+        .iframe-container {
+            text-align: center; /* Centers the iframe block */
+        }
+        
+        .iframe-container iframe {
+            margin: 0 auto; 
+            display: block; /* This makes the iframe a block element */
+        }
+        
+        .scroll-note {
+            text-align: center; 
+            margin-top: 20px; 
+            font-size: 1.1em; /* Slightly larger text for emphasis */
+            font-weight: bold; 
+        }
+        
     </style>
 </head>
 <body>
+    <div class="iframe-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=aryannorthview%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
 
-    <iframe src="https://calendar.google.com/calendar/embed?src=aryannorthview%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
+    <div class="scroll-note">
+        <p>Please scroll down for inquiries.</p>
+    </div>
+    
     <div class="container"> <!-- Changed class name here -->
         <h2>Scheduling Request Form</h2>
         <form action="/submit-your-request" method="post" class="form-wrapper"> <!-- Added class here -->
