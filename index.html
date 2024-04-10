@@ -76,35 +76,53 @@
 			justify-content: center; /* Centers the container horizontally */
 		}
 
+		.left-buttons, .right-buttons {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: flex-start; /* Aligns buttons to the start of the container */
+		    margin: 0 20px; /* Space between image and buttons */
+		}
+		
+		.left-buttons .button {
+		    /* Style for module buttons */
+		    margin-bottom: 10px; /* Spacing between buttons */
+		}
+		
+		.right-buttons .button {
+		    /* Style for non-module buttons */
+		    margin-bottom: 10px; /* Spacing between buttons */
+		}
+		
 	</style>
 </head>
 <body lang="en-CA" text="#333333" bgcolor="#f0f0f0">
     <h1 class="western">Welcome to My Cool Website</h1>
-	
- <!-- Flex Container for Image and Buttons -->
-    <div class="flex-container">
-        <!-- Image Container -->
+
+        <div class="left-buttons">
+        <a href="module19.html" class="button">Module 19</a>
+        <a href="module17.html" class="button">Module 17</a>
+        <a href="module16.html" class="button">Module 16</a>
+        <a href="module15.html" class="button">Module 15</a>
+        <a href="module14.html" class="button">Module 14</a>
+        <a href="module12.html" class="button">Module 12</a>
+    </div>
+
+  <div class="flex-container">
         <div class="image-container">
             <img src="Headshot.jpeg" alt="Cool Headshot" width="800" height="800" border="0"/>
         </div>
 
-        <!-- Buttons Container -->
-        <div class="buttons-container">
-	    <a href="module19.html" class="button">Module 19</a>
-	    <a href="module17.html" class="button">Module 17</a>
-	    <a href="module16.html" class="button">Module 16</a>
-	    <a href="module15.html" class="button">Module 15</a>
-	    <a href="module14.html" class="button">Module 14</a>
-	    <a href="module12.html" class="button">Module 12</a>
-            <a href="announcements.html" class="button">Announcements</a>
-            <a href="calendar.html" class="button">Calendar</a>
-	    <a href="Biography_Form.docx" class="button" download>Download Biography Form</a>
-            <a href="management-contact.html" class="button">Management Contact</a>
-            <a href="information-table.html" class="button">Contact Sheet</a>
-            <a href="secure-documents.html" class="button">Secure Pages/Documents</a>
-            <a href="public-downloads.html" class="button">Public Downloads</a>
-        </div>
+    <!-- Right Buttons Container for Non-Module Links -->
+    <div class="right-buttons">
+        <a href="announcements.html" class="button">Announcements</a>
+        <a href="calendar.html" class="button">Calendar</a>
+        <a href="Biography_Form.docx" class="button" download>Download Biography Form</a>
+        <a href="management-contact.html" class="button">Management Contact</a>
+        <a href="information-table.html" class="button">Contact Sheet</a>
+        <a href="secure-documents.html" class="button">Secure Pages/Documents</a>
+        <a href="public-downloads.html" class="button">Public Downloads</a>
     </div>
+</div>
 
 <!-- Footer -->
 <footer style="background-color: #007bff; color: white; text-align: center; padding: 10px 0;">
