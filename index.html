@@ -19,6 +19,7 @@
             color: #333;
         }
         img {
+            width: 60%;
             max-width: 100%;
             height: auto;
             border: 3px solid #007bff;
@@ -35,14 +36,17 @@
         }
         .flex-container {
             display: flex;
-            justify-content: space-around; /* Distributes space around items */
-            align-items: flex-start; /* Aligns items at the start of the container */
-            flex-wrap: wrap; /* Allows items to wrap onto the next line */
-            padding: 20px 0; /* Padding above and below the flex container */
+            justify-content: center; /* Center the items */
+            align-items: flex-start; /* Align items to the start */
+            flex-wrap: wrap; /* Wrap items */
+            padding: 20px; /* Padding for the container */
+            gap: 20px; /* Space between children */
         }
-        .flex-item {
-            margin: 10px; /* Space between flex items */
-            flex-basis: 200px; /* Default size before growing or shrinking */
+        .left-buttons, .right-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align the buttons */
+            gap: 10px; /* Space between buttons */
         }
         .button {
             background-color: #007bff;
@@ -53,17 +57,7 @@
             border-radius: 5px;
             font-family: Arial, sans-serif;
             text-align: center;
-            display: block; /* Full width of parent */
-        }
-        .image-container {
-            flex-grow: 1; /* Allows the image container to grow */
-            max-width: 300px; /* Maximum width of image */
-            padding: 10px; /* Space around the image */
-        }
-        .left-buttons, .right-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center align the buttons */
+            width: 200px; /* Fixed width of the buttons */
         }
     </style>
 </head>
@@ -71,7 +65,7 @@
     <h1>Welcome to My Cool Website</h1>
     <div class="flex-container">
         <!-- Left Buttons Container for Module Links -->
-        <div class="left-buttons flex-item">
+        <div class="left-buttons">
             <a href="module19.html" class="button">Module 19</a>
             <a href="module17.html" class="button">Module 17</a>
             <a href="module16.html" class="button">Module 16</a>
@@ -80,13 +74,12 @@
             <a href="module12.html" class="button">Module 12</a>
         </div>
 
-        <!-- Image Container -->
-        <div class="image-container">
+        <div>
             <img src="Headshot.jpeg" alt="Cool Headshot"/>
         </div>
 
         <!-- Right Buttons Container for Non-Module Links -->
-        <div class="right-buttons flex-item">
+        <div class="right-buttons">
             <a href="announcements.html" class="button">Announcements</a>
             <a href="calendar.html" class="button">Calendar</a>
             <a href="Biography_Form.docx" class="button" download>Download Biography Form</a>
@@ -97,8 +90,7 @@
         </div>
     </div>
     <footer>
-        <p> Aryan's Cool Blue Footer © 2024</p>
+        <p> Aryan's Blue Footer © 2024</p>
     </footer>
 </body>
 </html>
-
