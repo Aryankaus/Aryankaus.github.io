@@ -4,119 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduling Requests</title>
-    <link rel="stylesheet" href="style.css"> 
-
-            <style> 
-            
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .container {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-            
-            .update-note {
-                background-color: #f2f2f2;
-                padding: 20px;
-                margin-top: 20px;
-                text-align: center;
-            }
-            
-            .update-note button {
-                background-color: #007BFF; /* Blue color from your button example */
-                border: none;
-                color: white;
-                padding: 10px 15px;
-                text-decoration: none;
-                font-size: 16px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-            
-            .update-note button:hover {
-                background-color: #0056b3; /* Darker blue on hover */
-            }
-            
-            .form-wrapper {
-                background-color: #f9f9f9;
-                padding: 20px;
-                margin-top: 20px;
-            }
-            
-            .form-group {
-                margin-bottom: 15px;
-            }
-            
-            label {
-                display: block;
-                margin-bottom: 5px;
-            }
-            
-            input[type="text"],
-            input[type="email"],
-            select,
-            textarea {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-            }
-            
-            .blue-button {
-                background-color: #007BFF; /* Blue color from your button example */
-                border: none;
-                color: white;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-            
-            .blue-button:hover {
-                background-color: #0056b3; /* Darker blue on hover */
-            }
-                
-            </style>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .update-note {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .update-note button {
+            background-color: #007BFF; /* Blue color from your button example */
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .update-note button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .form-wrapper {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .blue-button {
+            background-color: #007BFF; /* Blue color from your button example */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .blue-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
+
     <iframe src="https://calendar.google.com/calendar/embed?src=aryannorthview%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-<div class="form-container">
+    <div class="container"> <!-- Changed class name here -->
         <h2>Scheduling Request Form</h2>
-        <form action="/submit-your-request" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="request-type">Request Type:</label>
-            <select id="request-type" name="request_type" required>
-                <option value="schedule-change">Schedule Change</option>
-                <option value="cancellation">Cancellation</option>
-                <option value="new-request">New Request</option>
-            </select>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit Request</button>
+        <form action="/submit-your-request" method="post" class="form-wrapper"> <!-- Added class here -->
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="request-type">Request Type:</label>
+                <select id="request-type" name="request_type" required>
+                    <option value="schedule-change">Schedule Change</option>
+                    <option value="cancellation">Cancellation</option>
+                    <option value="new-request">New Request</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="blue-button">Submit Request</button> <!-- Added class here -->
         </form>
     </div>
 
-    <div class="notification-box">
+    <div class="update-note"> <!-- Changed class name here -->
         <p><strong>Note:</strong> If you don't see an updated calendar with the rehearsal information, please:</p>
-        <button onclick="location.href='management-contact.html'">Contact Management</button>
+        <button onclick="location.href='management-contact.html'" class="blue-button">Contact Management</button> <!-- Added class here -->
     </div>
     
 </body>
