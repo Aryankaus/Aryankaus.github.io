@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <script type="text/javascript">
+    function passwordProtect() {
+      var passwordEntered = prompt('Please enter the password to access this page:');
+      if(passwordEntered !== 'ARTS') {
+        // If the password is wrong, we redirect to another page or simply close the window
+        window.location = 'access-denied.html';
+        // Or you could use window.close(); to close the tab/window if it's not blocked by the browser
+      }
+    }
+    // Call the function as soon as the script loads
+    passwordProtect();
+  </script>
+    
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>Cool Blue Accented Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
