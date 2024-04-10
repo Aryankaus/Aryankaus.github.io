@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+ <script type="text/javascript">
+    function passwordProtect() {
+      var passwordEntered = prompt('Please enter the password to access this page:');
+      if(passwordEntered !== 'THEA') {
+        window.location = 'access-denied.html';
+      }
+    }
+    // Call the function as soon as the script loads
+    passwordProtect();
+  </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[CONFIDENTIAL] Casting List Numbers</title>
